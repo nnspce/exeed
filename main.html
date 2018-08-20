@@ -1112,7 +1112,7 @@ footer a {
     height: 0px;
     display: block;
     overflow: hidden;
-    padding: 35px 0 0 0;
+    padding: 0 0 0;
     list-style-type: none;
     transition: height 0.5s ease-out;
     position: fixed;
@@ -1139,7 +1139,8 @@ footer a {
   input#mobile_button:checked ~ ul#mobile_menu {
   height: calc(100% - 73px);
   transition: height 0.5s ease-in;
-}
+  padding: 35px 0 0 0;
+  }
 
   header {
     flex-direction: column;
