@@ -296,24 +296,42 @@ header ul, .caption li, .audio_info ul, #projects, #admins, #updates, #stats, #a
   display: inline;
 }
 
-.fontawesome .buttons a::after {
+.fontawesome .buttons a::after, .fontawesome .note.reblog::before {
   content: "\f079";
   display: inline;
+  width: 1.25em
 }
 
-.honeybee .buttons a::after {
+.honeybee .buttons a::after, .honeybee .note.reblog::before {
   content: "\e3f0";
   display: inline;
+  width: 1.25em
 }
 
-.fontawesome .custom_like_button span::after {
+.fontawesome .custom_like_button span::after, .fontawesome .note.like::before {
   content: "\f004";
   display: inline;
+  width: 1.25em
 }
 
-.honeybee .custom_like_button span::after {
+.honeybee .custom_like_button span::after, .honeybee .note.like::before {
   content: "\e154";
   display: inline;
+  width: 1.25em
+}
+
+.fontawesome .note.reply::before {
+  width: 1.25em;
+  display: inline-block;
+  text-align:center;
+  content: "\f075";
+}
+
+.honeybee .note.reply::before {
+  width: 1.25em;
+  display: inline-block;
+  text-align:center;
+  content: "\e416";
 }
 
 .fontawesome .ptags span::after {
