@@ -20,6 +20,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
   <title>{Title}{block:SearchPage} :: ({lang:Search results for SearchQuery}){/block:SearchPage}{block:TagPage} :: #{Tag}{/block:TagPage}{block:PermalinkPage}{block:PostSummary} :: {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
   {block:Description}
   <meta name="description" content="{MetaDescription}" />
@@ -1243,6 +1244,13 @@ footer a {
     {/block:SubmissionsEnabled}
 
     <!--custom links-->
+    {block:HasPages}
+      {block:Pages}
+      <li><a href="{URL}">{Label}
+      </a></li>
+      {/block:Pages}
+    {/block:HasPages}
+	  
     {block:Iflinkoneurl}
       <li><a href="{text:link one url}">{text:link one title}
       </a></li>
@@ -1305,6 +1313,13 @@ footer a {
           {/block:SubmissionsEnabled}
 
           <!--custom links-->
+	    		 {block:HasPages}
+             {block:Pages}
+             <li><a href="{URL}">{Label}
+             </a></li>
+             {/block:Pages}
+           {/block:HasPages}
+		
            {block:Iflinkoneurl}
              <li><a href="{text:link one url}">{text:link one title}
              </a></li>
