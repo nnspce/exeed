@@ -28,10 +28,9 @@
 
   {block:Hidden}
   <meta name="theme-color" content="{color:header}">
-  <meta name=" " content="{HeaderImage}" />
 
-  <meta name="if:Header Image" content="0" />
-  <meta name="image:Header" content="{Header}" />
+  <meta name="if:Full Header Image" content="0" />
+  <meta name="image:Header" content="" />
 
   <meta name="if:Background Image" content="0" />
   <meta name="image:Background" content="" />
@@ -115,9 +114,94 @@
   <meta name="text:Social Three Url" content="" />
   <meta name="text:Social Four Icon" content="f167" />
   <meta name="text:Social Four Url" content="" />
+  
+  <meta name="text:Headline One" content="About" />
+  <meta name="text:Headline Two" content="Projects" />
+  <meta name="text:Headline Three" content="Projects" />
+  <meta name="text:Headline Four" content="Updates" />
+  <meta name="text:Headline Five" content="Admins" />
+  <meta name="text:Headline Six" content="Quick Links" />
+  <meta name="text:Headline Seven" content="Affiliates" />
+  <meta name="text:Headline Eight" content="Members" />
+  <meta name="text:Headline Nine" content="Stats" />
+  
+  <!--PROJECTS-->
+  <meta name="image:Project One" content="" />
+  <meta name="image:Project Two" content="" />
+  <meta name="image:Project Three" content="" />
+  
+  <meta name="text:Project One Name" content="Project One" />
+  <meta name="text:Project Two Name" content="Project Two" />
+  <meta name="text:Project Three Name" content="Project Three" />
+  
+  <meta name="text:Project One Url" content="" />
+  <meta name="text:Project Two Url" content="" />
+  <meta name="text:Project Three Url" content="" />
+  
+  <!--PROJECTS ALT-->
+  <meta name="image:Project Alt One" content="" />
+  <meta name="image:Project Alt Two" content="" />
+  <meta name="image:Project Alt Three" content="" />
+  
+  <meta name="text:Project Alt One Url" content="" />
+  <meta name="text:Project Alt One Name" content="Project One" />
+  <meta name="text:Project Alt Two Url" content="" />
+  <meta name="text:Project Alt Two Name" content="Project Two" />
+  <meta name="text:Project Alt Three Url" content="" />
+  <meta name="text:Project Alt Three Name" content="Project Three" />
+  
+  <meta name="text:Project Alt One Text" content="Short description about your project. The box will expand automatically." />
+  <meta name="text:Project Alt Two Text" content="Short description about your project. The box will expand automatically." />
+  <meta name="text:Project Alt Three Text" content="Short description about your project. The box will expand automatically." />
+  
+  <!--ADMINS-->
+  <meta name="image:Admin One" content="" />
+  <meta name="image:Admin Two" content="" />
+  <meta name="image:Admin Three" content="" />
+  
+  <meta name="text:Admin One Url" content="" />
+  <meta name="text:Admin One Name" content="Admin One" />
+  <meta name="text:Admin Two Url" content="" />
+  <meta name="text:Admin Two Name" content="Admin Two" />
+  <meta name="text:Admin Three Url" content="" />
+  <meta name="text:Admin Three Name" content="Admin Three" />
+  
+  <meta name="text:Admin One Text" content="Age / Timezone / Misc." />
+  <meta name="text:Admin Two Text" content="Age / Timezone / Misc." />
+  <meta name="text:Admin Three Text" content="Age / Timezone / Misc." />
+  
+  <!--QUICK LINKS-->
+  <meta name="text:Quick Link One Url" content="" />
+  <meta name="text:Quick Link One Title" content="" />
+  <meta name="text:Quick Link Two Url" content="" />
+  <meta name="text:Quick Link Two Title" content="" />
+  <meta name="text:Quick Link Three Url" content="" />
+  <meta name="text:Quick Link Three Title" content="" />
+  <meta name="text:Quick Link Four Url" content="" />
+  <meta name="text:Quick Link Four Title" content="" />
+  <meta name="text:Quick Link Five Url" content="" />
+  <meta name="text:Quick Link Five Title" content="" />
+  
+  <!--AFFILIATES-->
+  <meta name="image:Affiliates One" content="" />
+  <meta name="image:Affiliates Two" content="" />
+  <meta name="image:Affiliates Three" content="" />
+  
+  <meta name="text:Affiliates One Url" content="" />
+  <meta name="text:Affiliates One Title" content="" />
+  <meta name="text:Affiliates Two Url" content="" />
+  <meta name="text:Affiliates Two Title" content="" />
+  <meta name="text:Affiliates Three Url" content="" />
+  <meta name="text:Affiliates Three Title" content="" />
+  <meta name="text:Affiliates Four Url" content="" />
+  <meta name="text:Affiliates Four Title" content="" />
+  <meta name="text:Affiliates Five Url" content="" />
+  <meta name="text:Affiliates Five Title" content="" />
 
-  <meta name="text:Online Counter" content="online script" />
-  <meta name="text:Visit Counter" content="visit script" />
+  <!--INFO-->
+  <meta name="text:Tracking" content="" />
+  <meta name="text:Online Counter" content="" />
+  <meta name="text:Visit Counter" content="" />
   {/block:Hidden}
 
   <!--FONTS-->
@@ -590,11 +674,11 @@ input:focus {outline:none;}
 
 
 #container.page1 {
-  {block:IfHeaderImage}
+  {block:IfFullHeaderImage}
   {block:Homepage}
   margin-top: 100vh;
   {/block:Homepage}
-  {/block:IfHeaderImage}
+  {/block:IfFullHeaderImage}
 }
 
 #container.two {
@@ -673,7 +757,7 @@ aside {
 #desc, #desc, #quick {
   border-top: 3px solid {color:border one};
  }
-#projects li, #projects li, #stats li, #updates li, #updates li {
+#projects li, #projects li, #stats li, #updates li {
   border-left: 3px solid {color:border one};
 }
 
@@ -738,7 +822,7 @@ aside {
 
 #admins img, #projects img, #affiliates img {width: 50px; height: 50px;}
 #projects li {text-transform: uppercase;}
-#projects li span {padding: 0 5px;}
+#projects li span {padding: 0 10px;}
 #admins li, #projects li {
   display: flex;
   align-items: center;
@@ -748,7 +832,7 @@ aside {
   background: {color:post background};
 }
 #admins li {justify-content: flex-start;}
-#admins .box_wrap {padding: 0 15px;}
+#admins .box_wrap {padding: 5px 15px;}
 
 #projects a {padding: 0 20px; height: 100%; background: {color:accent}; color: {color:accent text};}
 #projects a:hover {background: {color:border one}; color: {color:accent};}
@@ -766,8 +850,13 @@ aside {
 #projects-2 li {border-bottom: 3px solid {color:accent}; background: {color:post background};}
 #projects-2 li:not(:last-child), #projects-2 .box_headline {margin-bottom: 5px;}
 
+#projects-2 li img {height: 150px; width: 250px;}
+
+/*updates*/
+#updates li span:nth-child(2) {padding: 5px 10px;}
+
 /*affiliates & members*/
-#affiliates, #members {display: flex; flex-wrap: wrap ;justify-content: space-between;}
+#affiliates, #members {display: flex; flex-wrap: wrap ;justify-content: center;}
 #affiliates li:not(:last-child), #members li:not(:last-child) {margin-right: 5px;}
 
 #members {justify-content: center;}
@@ -1355,9 +1444,9 @@ footer a {
     </header>
 
   {block:Homepage}
-  {block:IfHeaderImage}
+  {block:IfFullHeaderImage}
   <div id="background" class="page{CurrentPage}"></div>
-  {/block:IfHeaderImage}
+  {/block:IfFullHeaderImage}
   {/block:Homepage}
 
 <!--HEADER END-------------------------------------------------------------->
@@ -1408,7 +1497,7 @@ footer a {
 <!-----------------------------------ABOUT---------------------------------->
       <div id="box_1" class="boxes">
         <div class="box_header">
-         <span>About</span>
+         <span>{text:Headline One}</span>
         </div>
 
         <div id="desc">
@@ -1428,32 +1517,45 @@ footer a {
 
       <div id="box_2" class="boxes">
         <div class="box_header">
-         <span>Projects</span>
+         <span>{text:Headline Two}</span>
         </div>
         <ul id="projects">
-
+          
+          {block:IfProjectOneUrl}
           <li>
             <!--image-->
-            <img src="https://placehold.it/50x50"> <span>
+            {block:IfProjectOneImage}
+            <img src="{image:Project One}">{/block:IfProjectOneImage} <span>
             <!--name-->
-            Project One
+            {text:Project One name}
             </span>
-            <a href="/PROJECTLINK"></a>
+            <a href="{text:project one url}"></a>
           </li>
+          {/block:IfProjectOneUrl}
 
+          {block:IfProjectTwoUrl}
           <li>
-            <img src="https://placehold.it/50x50"> <span>
-            Project Two
+            <!--image-->
+            {block:IfProjectTwoImage}
+            <img src="{image:Project Two}">{/block:IfProjectTwoImage} <span>
+            <!--name-->
+            {text:Project Two Name}
             </span>
-            <a href="/PROJECTLINK"></a>
+            <a href="{text:project two url}"></a>
           </li>
+          {/block:IfProjectTwoUrl}
 
+          {block:IfProjectThreeUrl}
           <li>
-            <img src="https://placehold.it/50x50"> <span>
-            Project Three
+            <!--image-->
+            {block:IfProjectThreeImage}
+            <img src="{image:Project Three}">{/block:IfProjectThreeImage} <span>
+            <!--name-->
+            {text:Project Three Name}
             </span>
-            <a href="/PROJECTLINK"></a>
+            <a href="{text:project three url}"></a>
           </li>
+          {/block:IfProjectThreeUrl}
 
         </ul>
       </div>
@@ -1468,55 +1570,75 @@ footer a {
 
       <div id="box_2-5" class="boxes">
         <div class="box_header">
-         <span>Projects</span>
+         <span>{text:Headline Three}</span>
         </div>
         <ul id="projects-2">
 
+          {block:IfProjectAltOneUrl}
           <li>
             <!--image-->
-            <img src="https://placehold.it/250x150">
+            {block:IfProjectAltOneImage}
+            <img src="{image:Project Alt One}">
+            {/block:IfProjectAltOneImage}
             <div class="box_desc">
               <div class="box_headline">
                 <!--link-->
-                <a href="PROJECTURL">
+                <a href="{text:Project Alt One Url}">
                 <!--name-->
-                Project One Name
+                {text:Project Alt One Name}
                 </a>
               </div>
               <div class="box_sub">
                 <!--description-->
-                Short description about your project. The box will expand automatically.
+                {text:Project Alt One Text}
               </div>
             </div>
           </li>
+          {/block:IfProjectAltOneUrl}
 
+          {block:IfProjectAltTwoUrl}
           <li>
-            <img src="https://placehold.it/250x150">
+            <!--image-->
+            {block:IfProjectAltTwoImage}
+            <img src="{image:Project Alt Two}">
+            {/block:IfProjectAltTwoImage}
             <div class="box_desc">
               <div class="box_headline">
-                <a href="PROJECTURL">
-                Project Two Name
+                <!--link-->
+                <a href="{text:Project Alt Two Url}">
+                <!--name-->
+                {text:Project Alt Two Name}
                 </a>
               </div>
               <div class="box_sub">
-                Short description about your project. The box will expand automatically.
+                <!--description-->
+                {text:Project Alt Two Text}
               </div>
             </div>
           </li>
+          {/block:IfProjectAltTwoUrl}
 
+          {block:IfProjectAltThreeUrl}
           <li>
-            <img src="https://placehold.it/250x150">
+            <!--image-->
+            {block:IfProjectAltThreeImage}
+            <img src="{image:Project Alt Three}">
+            {/block:IfProjectAltThreeImage}
             <div class="box_desc">
               <div class="box_headline">
-                <a href="PROJECTURL">
-                Project Three Name
+                <!--link-->
+                <a href="{text:Project Alt Three Url}">
+                <!--name-->
+                {text:Project Alt Three Name}
                 </a>
               </div>
               <div class="box_sub">
-                Short description about your project. The box will expand automatically.
+                <!--description-->
+                {text:Project Alt Three Text}
               </div>
             </div>
           </li>
+          {/block:IfProjectAltThreeUrl}
 
         </ul>
       </div>
@@ -1531,14 +1653,14 @@ footer a {
 
       <div id="box_3" class="boxes">
         <div class="box_header">
-         <span>Updates</span>
+         <span>{text:Headline Four}</span>
         </div>
         <ul id="updates">
-          <li><span>{text:date one}</span>{text:update one}</li>
-          <li><span>{text:date two}</span>{text:update two}</li>
-          <li><span>{text:date three}</span>{text:update three}</li>
-          <li><span>{text:date four}</span>{text:update four}</li>
-          <li><span>{text:date five}</span>{text:update five}</li>
+          {block:IfUpdateOne}<li>{block:IfDateOne}<span>{text:date one}</span>{/block:IfDateOne}{text:update one}</li>{/block:IfUpdateOne}
+          {block:IfUpdateTwo}<li>{block:IfDateTwo}<span>{text:date two}</span>{/block:IfDateTwo}{text:update two}</li>{/block:IfUpdateTwo}
+          {block:IfUpdateThree}<li>{block:IfDateThree}<span>{text:date three}</span>{/block:IfDateThree}{text:update three}</li>{/block:IfUpdateThree}
+          {block:IfUpdateThree}<li>{block:IfDateThree}<span>{text:date three}</span>{/block:IfDateThree}{text:update three}</li>{/block:IfUpdateThree}
+          {block:IfUpdateFour}<li>{block:IfDateFour}<span>{text:date four}</span>{/block:IfDateFour}{text:update four}</li>{/block:IfUpdateFour}
         </ul>
       </div>
 
@@ -1550,63 +1672,81 @@ footer a {
 
       <div id="box_4" class="boxes">
         <div class="box_header">
-         <span>Admins</span>
+         <span>{text:Headline Five}</span>
         </div>
         <ul id="admins">
 
+          {block:IfAdminOneName}
           <li>
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            {block:IfAdminOneImage}
+            <img src="{image:Admin One}">
+            {/block:IfAdminOneImage}
             <div class="box_wrap">
               <div class="box_desc">
                 <!--admin url-->
-                <a href="https://BLOGNAME.tumblr.com">
+                <a href="{text:Admin One Url}">
                   <!--admin name-->
-                  Admin One
+                  {text:Admin One Name}
                 </a>
               </div>
+              {block:IfAdminOneText}
               <div class="box_sub">
                 <!--admin description-->
-                Age / Timezone / Misc.
+                {text:Admin One Text}
               </div>
+              {/block:IfAdminOneText}
             </div>
           </li>
+          {/block:IfAdminOneName}
 
+          {block:IfAdminTwoName}
           <li>
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            {block:IfAdminTwoImage}
+            <img src="{image:Admin Two}">
+            {/block:IfAdminTwoImage}
             <div class="box_wrap">
               <div class="box_desc">
                 <!--admin url-->
-                <a href="https://BLOGNAME.tumblr.com">
+                <a href="{text:Admin Two Url}">
                   <!--admin name-->
-                  Admin Two
+                  {text:Admin Two Name}
                 </a>
               </div>
+              {block:IfAdminTwoText}
               <div class="box_sub">
                 <!--admin description-->
-                Age / Timezone / Misc.
+                {text:Admin Two Text}
               </div>
+              {/block:IfAdminTwoText}
             </div>
           </li>
+          {/block:IfAdminTwoName}
 
+          {block:IfAdminThreeName}
           <li>
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            {block:IfAdminThreeImage}
+            <img src="{image:Admin Three}">
+            {/block:IfAdminThreeImage}
             <div class="box_wrap">
               <div class="box_desc">
                 <!--admin url-->
-                <a href="https://BLOGNAME.tumblr.com">
+                <a href="{text:Admin Three Url}">
                   <!--admin name-->
-                  Admin Two
+                  {text:Admin Three Name}
                 </a>
               </div>
+              {block:IfAdminThreeText}
               <div class="box_sub">
                 <!--admin description-->
-                Age / Timezone / Misc.
+                {text:Admin Three Text}
               </div>
+              {/block:IfAdminThreeText}
             </div>
           </li>
+          {/block:IfAdminThreeName}
 
         </ul>
       </div>
@@ -1628,15 +1768,15 @@ footer a {
 
       <div id="box_5" class="boxes">
         <div class="box_header">
-         <span>Quick Links</span>
+         <span>{text:Headline Six}</span>
         </div>
         <ul id="quick">
           <!--Replace the empty links with your links!-->
-          <li><a href="LINK">Link One</a></li>
-          <li><a href="LINK">Link One</a></li>
-          <li><a href="LINK">Link One</a></li>
-          <li><a href="LINK">Link One</a></li>
-          <li><a href="LINK">Link One</a></li>
+          {block:IfQuickLinkOneUrl}<li><a href="{text:Quick Link One Url}">{text:Quick Link One Title}</a></li>{/block:IfQuickLinkOneUrl}
+          {block:IfQuickLinkTwoUrl}<li><a href="{text:Quick Link Two Url}">{text:Quick Link Two Title}</a></li>{/block:IfQuickLinkTwoUrl}
+          {block:IfQuickLinkThreeUrl}<li><a href="{text:Quick Link Three Url}">{text:Quick Link Three Title}</a></li>{/block:IfQuickLinkThreeUrl}
+          {block:IfQuickLinkFourUrl}<li><a href="{text:Quick Link Four Url}">{text:Quick Link Four Title}</a></li>{/block:IfQuickLinkFourUrl}
+          {block:IfQuickLinkFiveUrl}<li><a href="{text:Quick Link Five Url}">{text:Quick Link Five Title}</a></li>{/block:IfQuickLinkFiveUrl}
         </ul>
       </div>
 
@@ -1650,47 +1790,55 @@ footer a {
 
       if you need the avatar of a Tumblr blog you can add your URL like this: https://api.tumblr.com/v2/blog/BLOGNAME.tumblr.com/avatar/50-->
 
-      <div id="box_5" class="boxes">
+      <div id="box_6" class="boxes">
         <div class="box_header">
-         <span>affiliates</span>
+         <span>{text:Headline Seven}</span>
         </div>
         <ul id="affiliates">
 
+          {block:IfAffiliatesOneImage}
           <li>
             <!--link-->
-            <a href="AFFILIATELINK"
-            title="affiliate name">
+            <a href="{text:Affiliates One Url}"
+            title="{text:Affiliates One Title}">
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            <img src="{image:Affiliates One}">
             </a>
           </li>
+          {/block:IfAffiliatesOneImage}
 
+         {block:IfAffiliatesTwoImage}
           <li>
             <!--link-->
-            <a href="AFFILIATELINK"
-            title="affiliate name">
+            <a href="{text:Affiliates Two Url}"
+            title="{text:Affiliates Two Title}">
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            <img src="{image:Affiliates Two}">
             </a>
           </li>
+          {/block:IfAffiliatesTwoImage}
 
+          {block:IfAffiliatesThreeImage}
           <li>
             <!--link-->
-            <a href="AFFILIATELINK"
-            title="affiliate name">
+            <a href="{text:Affiliates Three Url}"
+            title="{text:Affiliates Three Title}">
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            <img src="{image:Affiliates Three}">
             </a>
           </li>
+          {/block:IfAffiliatesThreeImage}
 
+          {block:IfAffiliatesFourImage}
           <li>
             <!--link-->
-            <a href="AFFILIATELINK"
-            title="affiliate name">
+            <a href="{text:Affiliates Four Url}"
+            title="{text:Affiliates Four Title}">
             <!--image-->
-            <img src="https://placehold.it/50x50">
+            <img src="{image:Affiliates Four}">
             </a>
           </li>
+          {/block:IfAffiliatesFourImage}
 
         </ul>
       </div>
@@ -1705,86 +1853,23 @@ footer a {
 
       if you need the avatar of a Tumblr blog you can add your URL like this: https://api.tumblr.com/v2/blog/BLOGNAME.tumblr.com/avatar/50-->
 
-      <div id="box_6" class="boxes">
+      {block:Following}
+      <div id="box_7" class="boxes">
         <div class="box_header">
-         <span>Members</span>
+         <span>{text:Headline Eight}</span>
         </div>
         <!--Add and remove as you need!-->
         <ul id="members">
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
+          
+          {block:Followed}
+          <li><a href="{FollowedURL}"
+            title="{FollowedName}"><img src="{FollowedPortraitURL-64}">
             </a></li>
+          {/block:Followed}
 
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
-
-          <li><a href="/"
-            title="member name"><img src="https://placehold.it/25x25">
-            </a></li>
         </ul>
       </div>
+      {/block:Following}
 
 <!---------------------------MEMBERS NED------------------------------------>
       {/block:ifMembers}
@@ -1792,16 +1877,17 @@ footer a {
       {block:ifStats}
 <!-----------------------------STATS---------------------------------------->
 
-      <div id="box_7" class="boxes left">
+      <div id="box_8" class="boxes left">
         <div class="box_header">
-         <span>Stats</span>
+         <span>{text:Headline Nine}</span>
         </div>
 
         <ul id="stats">
           <li><span>Est.:</span>{CopyrightYears}</li>
-          <li><span>Tracking:</span>#tag</li>
-          <li><span>Online:</span>{text:online counter}</li>
-          <li><span>Visits:</span>{text:visit counter}</li>
+          {block:IfTracking}<li><span>Tracking:</span>{text:tracking}</li>{/block:IfTracking}
+          {block:IfOnlineCounter}<li><span>Online:</span>{text:online counter}</li>{/block:IfOnlineCounter}
+          {block:IfVisitCounter}
+          <li><span>Visits:</span>{text:visit counter}</li>{/block:IfVisitCounter}
           <li><span>Theme:</span><a href="https://nonspace.tumblr.com">nonspace</a></li>
         </ul>
       </div>
