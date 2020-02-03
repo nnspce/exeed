@@ -40,7 +40,9 @@
   <meta name="color:Accent" content="#edebeb" />
   <meta name="color:Accent text" content="#777" />
   <meta name="color:Links" content="#444444" />
+  <meta name="color:Notes" content="#999" />
   <meta name="color:Header" content="#111" />
+  <meta name="color:Header Text" content="#999" />
   <meta name="color:Post background" content="#fff" />
   <meta name="color:Border One" content="#ff9600" />
   <meta name="color:Border Two" content="#f7136f" />
@@ -226,6 +228,7 @@
 
 body, html {
   font: {text:font size}px '{text:font}';
+  color: {color:text};
   background: {color:background};
   height: 100vh;
 }
@@ -351,7 +354,7 @@ header ul, .caption li, .audio_info ul, #projects, #admins, #updates, #stats, #a
   position: absolute;
   left: 0;
   font-size: 22px;
-  color: #999;
+  color: {color:header text};
 }
 
 .fontawesome #search_bar::after {
@@ -453,7 +456,7 @@ h1 {
 
 h2 {
   letter-spacing: 1px;
-  color: #111;
+  color: {color:text};
   font-weight: normal;
   font-size: calc({text:font size}px + 4px);
   padding: 10px 10px;
@@ -544,7 +547,7 @@ header {
   width: 100%;
   height: auto;
   top: 0;
-  color: #f8f8f8;
+  color: {color:header text};
   text-align: center;
   margin: 0px auto;
   font-weight: normal;
@@ -613,7 +616,7 @@ header li {
 }
 
 header a {
-  color: #999;
+  color: {color:header text};
   padding: 0 10px;
   font-size: 18px;
   text-transform: capitalize;
@@ -643,7 +646,7 @@ header a {
   height: 20px;
 }
 
-#search_bar input, #search_bar select, #search_bar textarea{padding: 0 10px; color: #999;}
+#search_bar input, #search_bar select, #search_bar textarea{padding: 0 10px; color: {color:header text};}
 input:focus {outline:none;}
 
 #search_input {
@@ -948,7 +951,7 @@ footer a {
 .reblog_body.caption {border-top: 5px solid {color:accent};}
 .caption h2 {margin-bottom: 10px; width: 100%; text-align: left;}
 .caption p a, .caption ul a {padding: 0 0px; box-shadow: inset 0 -5px {color:border one};}
-.caption a:hover {box-shadow: inset 0 -50px {color:border two}; color: #f8f8f8;}
+.caption a:hover {box-shadow: inset 0 -50px {color:border two}; color: {color:border two};}
 .caption p {margin: 15px 0; word-break: break-word;}
 .caption p:last-of-type {margin-bottom: 0;} 
 .caption > :first-child {margin-top: 0;}
@@ -1174,8 +1177,8 @@ iframe.photoset {
 
 .plnotes {margin: 25px 0; max-width: {select:post width}px;}
 .plnotes ol {margin: 50px 0; padding: 0;}
-.plnotes ol li {margin: 5px 0; padding: 0; font-size: calc({text:font size}px - 1px); color: #999;}
-.plnotes ol li a {text-transform: uppercase; font-style: italic; font-weight: bold; margin: 0 5px; color: #999;}
+.plnotes ol li {margin: 5px 0; padding: 0; font-size: calc({text:font size}px - 1px); {color:notes};}
+.plnotes ol li a {text-transform: uppercase; font-style: italic; font-weight: bold; margin: 0 5px; {color:notes};}
 .plnotes ol li blockquote a {text-transform: none; font-weight: normal;}
 .plnotes img {display: none; vertical-align: middle;}
 .plnotes img, .plnotes a {margin: 0 5px 0 0;}
